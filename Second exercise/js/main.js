@@ -8,6 +8,10 @@
 
 // 1) Chiedere all'utente pari o dispari con prompt
 
+alert('Scegliere tra "pari" e "dispari"');
+const chooseUser = prompt('Scrivere "pari" o "dispari"');
+console.log(chooseUser);
+
 // 2) Chiedere all'utente un numero da 1 a 5
 
 // 3) Creiamo una variabile con il risultato della funzione e decreta se hai vinto o perso
