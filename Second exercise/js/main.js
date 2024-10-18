@@ -14,6 +14,10 @@ console.log(chooseUser);
 
 // 2) Chiedere all'utente un numero da 1 a 5
 
+alert('Scrivi un numero tra 1 e 5');
+const numberUser = prompt('Scrivi un numero tra 1 e 5');
+console.log(numberUser);
+
 // 3) Creiamo una variabile con il risultato della funzione e decreta se hai vinto o perso
 
 // 4) Creiamo una funzione per validare se l'utente ha perso o no contro il computer
