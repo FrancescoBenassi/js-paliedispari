@@ -5,10 +5,11 @@ Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma.
 
 1) Chiedere all'utente una parola usando prompt()
-2) Creare una funzione per capire se la parola inserita è palindroma
-    - Creare una inversione di parola
-    - Confrontare le 2 parola (quella originale e quella inversa)
-    - Se corrispondono la parola è palindorma altrimenti non lo è
+2) Creare una variabile per avere il risultato della funzione
+3) Creare una funzione per capire se la parola inserita è palindroma
+    - Creare una variabile con la parola inversa
+    - Confrontare le 2 parole (quella originale e quella inversa)
+    - Se le 2 parole corrispondono la parola originale è palindorma altrimenti non lo è
 
 # Pari e Dispari
 
