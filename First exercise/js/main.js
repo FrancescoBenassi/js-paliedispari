@@ -5,7 +5,7 @@
 
 // 1) Chiedere all'utente una parola usando prompt()
 
-const word = prompt('Scrivi una parola');
+const word = (prompt('Scrivi una parola')).toLowerCase();
 console.log(word);
 
 // 2) Creare una variabile per avere il risultato della funzione
@@ -27,7 +27,8 @@ console.log(resultWord);
  */
 
 function validator(word) {
-    const wordReverse = word.toLowerCase().split('').reverse().join('');
+    const wordReverse = word.split('').reverse().join('');
+    console.log(wordReverse);
     let result = '';
     if(word === ''){
         alert('Non è stata inserita nessuna parola');
