@@ -20,8 +20,41 @@ console.log(numberUser);
 
 // 3) Creiamo una variabile con il risultato della funzione e decreta se hai vinto o perso
 
+const result = evenOdd(numberUser);
+console.log(result);
+
 // 4) Creiamo una funzione per validare se l'utente ha perso o no contro il computer
 //     - Creiamo una variabile con un numero random
 //     - Sommare il numero dell'utente con quello del computer
 //     - Validare se è un numero pari o dispari
 //     - In base a cosa ha scelto l'utente stampare se l'utente ha vinto o perso 
+
+/**
+ * La funzione prende 2 numeri da numberUser e numerRandom li somma, controlla se sono pari o dispari ed infine decreta se hai vinto o perso
+ * @param {number} numberUser
+ * @returns {string} 'Hai vinto' o 'Hai perso'
+ */
+
+function evenOdd(numberUser) {
+
+    let numberRandom = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
+    console.log(numberRandom);
+
+    let sum = numberUser + numberRandom;
+    
+    let resultEvenOdd = '';
+    
+    if (sum % 2 === 0) {
+        resultEvenOdd = 'pari';
+    } else {
+        resultEvenOdd = 'dispari';
+    }
+
+    if (chooseUser === resultEvenOdd) {
+        resultEvenOdd = 'Hai vinto';
+    } else {
+        resultEvenOdd = 'Hai perso';
+    }
+    
+    return resultEvenOdd;
+}
