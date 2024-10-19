@@ -20,7 +20,7 @@ console.log(numberUser);
 
 // 3) Creiamo una variabile con il risultato della funzione e decreta se hai vinto o perso
 
-const result = evenOdd(numberUser);
+const result = resultEvenOdd(numberUser);
 console.log(result);
 
 // 4) Creiamo una funzione per validare se l'utente ha perso o no contro il computer
@@ -35,7 +35,7 @@ console.log(result);
  * @returns {string} 'Hai vinto' o 'Hai perso'
  */
 
-function evenOdd(numberUser) {
+function resultEvenOdd(numberUser) {
 
     let numberRandom = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
     console.log(numberRandom);

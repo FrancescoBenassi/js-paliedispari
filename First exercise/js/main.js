@@ -21,7 +21,7 @@ console.log(resultWord);
 ///////////////
 
 /**
- * La funzione serve per invertire la parola data creando una variabile, confrontarla alla parola originale usando if ed infine stampare la stringa appropriata
+ * La funzione serve per invertire la parola data creando una variabile all'interno della funzione, confrontarla alla parola originale usando if ed infine stampare la stringa appropriata
  * @param {string} word 
  * @returns {string} 
  */
@@ -29,9 +29,12 @@ console.log(resultWord);
 function validator(word) {
     const wordReverse = word.toLowerCase().split('').reverse().join('');
     let result = '';
-    if (word === wordReverse) {
+    if(word === ''){
+        alert('Non è stata inserita nessuna parola');
+    } else if (word === wordReverse) {
         result = 'la parola è palindroma';
-    } else {
+    }
+    else {
         result = 'la parola non è palindroma';
     }
     return result;
